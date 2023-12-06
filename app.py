@@ -1,6 +1,9 @@
 import pickle
 import streamlit as st
 import pandas as pd
+import sklearn
+import nlp_id
+import PIL
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nlp_id.lemmatizer import Lemmatizer
 import numpy as np

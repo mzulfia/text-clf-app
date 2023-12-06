@@ -107,7 +107,7 @@ st.header("Mesin Inferensi")
 
 with st.sidebar.header('Automation System'):
     logo_pln_itb = Image.open('./assets/logo-pln-itb.png')
-    st.image(logo-pln-itb)
+    st.image(logo_pln_itb)
     st.sidebar.markdown('''Dikembangkan oleh **Kelompok 1 - IF5171**''')
 
 with st.form('inference_form', clear_on_submit=True):

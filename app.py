@@ -106,15 +106,8 @@ st.markdown('Rifki Zamzammi (NIM. 23522301), Muhammad Zulfi Ashari (NIM. 2352230
 st.header("Mesin Inferensi")
 
 with st.sidebar.header('Automation System'):
-    col1, col2 = st.columns(2)
-    with col1:
-      logo_itb = Image.open('./assets/logo-itb.png')
-      st.image(logo_itb)
-
-    with col2:
-      logo_pln = Image.open('./assets/logo-pln.png')
-      st.image(logo_pln, width=70)
-    
+    logo_pln_itb = Image.open('./assets/logo-pln-itb.png')
+    st.image(logo-pln-itb)
     st.sidebar.markdown('''Dikembangkan oleh **Kelompok 1 - IF5171**''')
 
 with st.form('inference_form', clear_on_submit=True):

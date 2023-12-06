@@ -1,3 +1,7 @@
+pip install -U scikit-learn
+pip install nlp_id
+pip install Pillow
+
 import pickle
 import streamlit as st
 import pandas as pd

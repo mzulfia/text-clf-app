@@ -99,7 +99,7 @@ def mergeWS(review):
   merged_wd =" ".join(do)
   return merged_wd
 
-
+st.set_page_config(layout='wide', initial_sidebar_state='expanded', page_title='Sistem Automasi Pengklasifikasian Ulasan PLN Mobile', page_icon='📑')
 st.title('Sistem Automasi Pengklasifikasian Ulasan PLN Mobile')
 st.markdown('Rifki Zamzammi (NIM. 23522301), Muhammad Zulfi Ashari (NIM. 23522304), Satria Dina Astari (NIM. 23522309)')
 
@@ -113,8 +113,7 @@ with st.sidebar.header('Automation System'):
 with st.form('inference_form', clear_on_submit=True):
    review = st.text_input('Ulasan', placeholder='Masukkan ulasan yang ingin diinferensi')
    submitted = st.form_submit_button('Submit', type='primary')
-        
-
+    
 if review != '':
   ISI_ULASAN = casefolding(review)
   ISI_ULASAN = lemmatizing(ISI_ULASAN)

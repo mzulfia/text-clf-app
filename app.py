@@ -125,12 +125,14 @@ if review != '':
   y_pred_main = mdl_svm_main.predict(X_test)
   y_pred_sub = mdl_svm_sub.predict(X_test)
     
-  st.header('Hasil') 
+  msg = st.chat_message("assistant")
+  msg.write('**Hasil**')
+
   with st.spinner('Processing...'):
     time.sleep(1)    
-    st.write(f'Isi Ulasan: **{review}**')
-    st.write(f'Klasifikasi Fitur: **{label_main.inverse_transform(y_pred_main)[0]}**')
-    st.write(f'Sub Klasifikasi Fitur: **{label_sub.inverse_transform(y_pred_sub)[0]}**')
+    msg.write(f'Isi Ulasan: **{review}**')
+    msg.write(f'Klasifikasi Fitur: **{label_main.inverse_transform(y_pred_main)[0]}**')
+    msg.write(f'Sub Klasifikasi Fitur: **{label_sub.inverse_transform(y_pred_sub)[0]}**')
     review = st.empty()
   
  
